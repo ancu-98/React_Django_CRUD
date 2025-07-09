@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     ## apps
     'crudapi',
     'rest_framework',
-    'corsheaders',
+    'corsheaders'
 ]
 
 MIDDLEWARE = [
@@ -52,6 +52,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+    ## Cors_middleware
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'backend.urls'
@@ -125,3 +128,10 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:5173",  # frontend local
+]
+
+# Otra forma en la que se puede permitir las peticiones desde el frontend
+# CORS_ALLOWED_ORIGINS = True
