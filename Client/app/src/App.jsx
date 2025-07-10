@@ -30,6 +30,10 @@ function App() {
   }
 
   const addBook = async () => {
+    if(!title || !autor || !releaseYear){
+      alert('Por favor completa todos los campos');
+      return;
+    }
     const bookData = {
       title,
       autor,
@@ -46,6 +50,11 @@ function App() {
       const data = await response.json()
       console.log(data)
       setBooks((prev) => [...prev, data])
+
+      // Se limpian los inputs después de agregar.
+      setTitle('');
+      setAutor('');
+      setReleaseYear('');
     } catch (err) {
       console.log(err)
     }
@@ -126,32 +135,52 @@ function App() {
 
   return (
     <>
-      <h1>Book Website</h1>
-      <div>
-        <input type="text" placeholder='Book Title...' onChange={(e) => setTitle(e.target.value)}/>
-        <input type="text" placeholder='Autor...' onChange={(e) => setAutor(e.target.value)}/>
-        <input type="number" placeholder='Release Date...' onChange={(e) => setReleaseYear(e.target.value)}/>
+      <h1>Books Website</h1>
+      <div className='create-book-form'>
+        <input
+          type="text"
+          placeholder='Book Title...'
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
+        />
+        <input
+          type="text"
+          placeholder='Autor...'
+          value={autor}
+          onChange={(e) => setAutor(e.target.value)}
+        />
+        <input
+          type="number"
+          placeholder='Release Date...'
+          value={releaseYear}
+          onChange={(e) => setReleaseYear(e.target.value)}
+        />
         <button onClick={addBook}>Add Book</button>
       </div>
-      <ul>
+      <ul className='books-container'>
         {books.map((book) => (
-          <li key={book.id}>
-            <strong>Title: {book.title}</strong>
-            <p>Autor:{book.autor}</p>
-            <p>Release Year: {book.release_year}</p>
-            <input
-              type="text"
-              placeholder='New Title...'
-              onChange={(e) => setNewTitle(e.target.value)}
-            />
-            <button onClick={() => updateTitle(book.id, book.autor, book.release_year)} >Change Title</button>
-            <input
-              type="text"
-              placeholder='New Title...'
-              onChange={(e) => setNewAutor(e.target.value)}
-            />
-            <button onClick={() => updateAutor(book.id, book.title ,book.release_year)} >Change Autor</button>
-            <button onClick={() => deleteBook(book.id)}> Delete Book </button>
+          <li key={book.id} className='book-item'>
+            <div className='book-info'>
+              <strong>Title: {book.title}</strong>
+              <p>Autor:{book.autor}</p>
+              <p>Release Year: {book.release_year}</p>
+            </div>
+            <div className='book-actions'>
+              <input
+                type="text"
+                placeholder='New Title...'
+                onChange={(e) => setNewTitle(e.target.value)}
+              />
+              <button className='title-button' onClick={() => updateTitle(book.id, book.autor, book.release_year)} >Change Title</button>
+              <input
+                type="text"
+                placeholder='New Autor...'
+                onChange={(e) => setNewAutor(e.target.value)}
+              />
+              <button className='autor-button' onClick={() => updateAutor(book.id, book.title ,book.release_year)} >Change Autor</button>
+              <button className='delete-button' onClick={() => deleteBook(book.id)}> Delete Book </button>
+
+            </div>
           </li>
         ))}
       </ul>
