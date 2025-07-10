@@ -10,3 +10,4 @@ class Book(models.Model):
         return self.title
 
 # {"title" : "You Don’t Know JS: Scope & Closures", "autor" : "Kyle Simpson", "release_year": 2014}
+# {"title": "Eloquent JavaScript (3ª edición)","autor": "Marijn Haverbeke","release_year": 2018}
