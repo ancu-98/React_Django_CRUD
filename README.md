@@ -57,6 +57,19 @@ React_Django_CRUD/
 
 ## ⚙️ Instalación
 
+### 📌 Requisitos del Sistema
+
+Para ejecutar correctamente este proyecto necesitas tener instalado lo siguiente en tu sistema:
+
+| Requisito     | Descripción                                  |
+| ------------- | -------------------------------------------- |
+| Python 3.10+  | Recomendado `v3.12.3`, con `venv` habilitado |
+| pip           | Administrador de paquetes de Python          |
+| Node.js       | Recomendado `v20.17.0` o superior            |
+| npm           | Administrador de paquetes para Node.js       |
+| Git           | Para clonar el repositorio                   |
+| Navegador web | Para acceder a la interfaz frontend          |
+
 ### 1. Clona el repositorio
 
 ```bash
@@ -65,10 +78,23 @@ cd React_Django_CRUD
 ```
 ### 2. Instala el backend (Django)
 
+🐧 En Linux/macOS:
+
 ```bash
 cd Server
 python -m venv env
 source env/bin/activate
+pip install -r requirements.txt
+cd backend
+python manage.py migrate
+python manage.py runserver
+```
+🪟 En Windows (CMD o PowerShell):
+
+```bash
+cd Server
+python -m venv env
+env\Scripts\activate
 pip install -r requirements.txt
 cd backend
 python manage.py migrate
@@ -86,7 +112,7 @@ npm run dev
 
 ## 🎥 Ver ejemplo en vivo
 Aquí te muestro cómo instalar y utilizar este proyecto:
-[video demostration]()
+[video demostration](https://mailunicundiedu-my.sharepoint.com/:v:/g/personal/jsbernalcuesta_ucundinamarca_edu_co/EboyFKJgC7VMjvb9irOyRAMBQ1leL0bv7sOI2L-CPQiWGQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=vmhcuP)
 
 Aquí te muestro la documentación del paso a paso de cómo construí el proyecto, por si quieres crear este proyecto tu mismo desde cero:
 [Step by step Docs](https://atom-sardine-e14.notion.site/Books-CRUD-API-Shared-22a3afe76d71803a8449ef00f8ec4597)
