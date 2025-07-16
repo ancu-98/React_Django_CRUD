@@ -103,4 +103,4 @@ Si quieres contratarme puedes escribirme a ancu_inbox@hotmail.com para consultas
 ## 🔐 Licencia
 N/A
 
-¿Te gusto este repo? ¡Dale ⭐ en GitHub y compártelo con tu equipo!
+¿Te gustó este repo? ¡Dale ⭐ en GitHub y compártelo con tu equipo!
