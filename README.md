@@ -23,14 +23,14 @@ Este proyecto demuestra cómo construir y conectar un **cliente moderno (React +
 ## 🧱 Estructura del proyecto
 React_Django_CRUD/
 │
-├── Client/ # Proyecto frontend con React y Vite
-│ └── app/ # Código fuente React (package.json aquí)
+├── Client/                  # Proyecto frontend con React y Vite
+│   └── app/                # Código fuente React (package.json aquí)
 │
-├── Server/ # Proyecto backend en Django
-│ └── backend/ # Código fuente de Django
-│ ├── crudapi/ # App de Django para libros
-│ ├── manage.py
-│ └── settings.py
+├── Server/                  # Proyecto backend en Django
+│   └── backend/            # Código fuente de Django
+│       ├── crudapi/        # App de Django para libros
+│       ├── manage.py
+│       └── settings.py
 
 ### 🔄 Operaciones CRUD
 
@@ -44,9 +44,9 @@ React_Django_CRUD/
 
 ## 👨‍💻 Autor
 
-** ancu-98 **
+**ancu-98**
 
-- 💼 [LinkedIn](www.linkedin.com/in/ancu98)
+- 💼 [LinkedIn](https://www.linkedin.com/in/ancu98)
 - 🐦 [X (Twitter)](https://x.com/)
 - 🌐 [Portfolio Web](https://ancu98-website.netlify.app/#)
 
@@ -89,7 +89,7 @@ Aquí te muestro la documentación del paso a paso de cómo construí el proyect
 ## 🎓 Bonus
 Si quieres entender un poco más a fondo **cómo Django procesa una solicitud desde que llega al servidor hasta que retorna una respuesta al navegador**, puedes consultar el archivo:
 
-📁[`/Server/backend/README.md`](./Server/backend/README.md)
+📁[`/Server/backend/README.md`](Server/backend/README.md)
 > Una lectura recomendada si quieres entender cómo Django opera “por dentro”.
 
 ## 📩 Contratación
