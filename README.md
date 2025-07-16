@@ -2,6 +2,8 @@
 
 Aplicación desacoplada que expone el backend con **Django** (API RESTful) y realiza peticiones desde el frontend desarrollado en **React** a través de **CORS**.
 
+![Image Alt](https://github.com/ancu-98/React_Django_CRUD/blob/89cfd144dd121b4a27899edd1fd063746ab2c557/Server/utils/Books-Website-Overview.png)
+
 El proyecto implementa operaciones completas de **CRUD (Create, Read, Update, Delete)** sobre una base de datos de libros. El backend utiliza el ORM de Django para interactuar con la base de datos y el frontend consume estas operaciones mediante `fetch` para renderizar y gestionar los datos de manera dinámica.
 
 Este proyecto demuestra cómo construir y conectar un **cliente moderno (React + Vite)** con un **servidor robusto (Django)**.
@@ -96,9 +98,9 @@ Si quieres entender un poco más a fondo **cómo Django procesa una solicitud de
 > Una lectura recomendada si quieres entender cómo Django opera “por dentro”.
 
 ## 📩 Contratación
-Si quieres contratarme puedes escribirme ancu_inbox@hotmail.com para consultas.
+Si quieres contratarme puedes escribirme a ancu_inbox@hotmail.com para consultas.
 
 ## 🔐 Licencia
 N/A
 
-¿Te gusto el repo? ¡Dale ⭐ en GitHub y compártelo con tu equipo!
+¿Te gusto este repo? ¡Dale ⭐ en GitHub y compártelo con tu equipo!
