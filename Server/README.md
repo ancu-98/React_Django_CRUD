@@ -145,11 +145,9 @@ Title: Eloquent JavaScript (3ª edición) - autor: Marijn Haverbeke - release_ye
 
 #---------------------------
 
-Este es un ciclo completo de solicitud-respuesta de Django en el mundo real.
+Este es un ciclo completo de solicitud-respuesta de Django en el mundo real:
 
-``` html
-<img src="./utils/ksnip_20250711-125025.png" alt=" DJANGO REQUEST-RESPONSE CYCLE" width="400"/>
-```
+![Image Alt](https://github.com/ancu-98/React_Django_CRUD/blob/89cfd144dd121b4a27899edd1fd063746ab2c557/Server/utils/ksnip_20250711-125025.png)
 
 ### 🧩 Descripción resumida de los pasos:
 
