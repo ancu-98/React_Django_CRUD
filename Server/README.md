@@ -1,9 +1,14 @@
 ## 🌀 DJANGO REQUEST-RESPONSE CYCLE
 
-Hola, en esta sección explicaré cómo Django procesa una solicitud paso a paso, hasta que se envía una respuesta. Vamos a entenderlo con ayuda de un ejemplo:
+Hola, en esta sección explicaré cómo Django procesa una solicitud paso a paso, hasta que se envía una respuesta. Vamos a entenderlo con ayuda de un ejemplo.
+
+Para empezar debemos tener en cuenta que Django sigue la arquitectura MTV (Model-Template-View), que es muy parecida al tradicional MVC (Model-View-Controller):
+
+- **Model:** Define la estructura de datos.
+- **Template:** Controla la presentación (HTML).
+- **View:** Lógica de negocio, conecta modelos con templates.
 
 Tomaremos cómo ejemplo, el sitio que acabamos de crear.
-
 
 ### 📩 Paso 1: El usuario envía una petición (request)
 
